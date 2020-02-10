@@ -1,0 +1,316 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f7f5ef;
+}
+.nav, .title, .flex {
+  margin: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: .9rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2rem;
+  color: #222;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background: url('../images/Tulsa_Skyline.jpg') no-repeat bottom center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 49%;
+  border: 3px solid #404040;
+  transition: all .4s;
+}
+header .profile-image:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+.location {
+  background-color: #222;
+  color: #BFB493;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: #3F89A6;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(../images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+a.github {
+  background-image: url(../images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/*Interest Page*/
+.interests {
+  margin: 0 5% 0 5%;
+}
+.interests h1 {
+  margin: 50px 0 20px 0;
+}
+.interests article {
+  margin-top: 50px;
+}
+.interests h3, .interestpics, article p{
+  text-align: left;
+  margin: 10px 0 10px 0;
+}
+.interestpics {
+  width: 335px;
+  height: 200px;
+  border-radius: 8px;
+  border-bottom: 3px #cccccc solid;
+}
+.interestpics:hover {
+  border-color: #0399ff;
+}
+
+/*contact page*/
+.formcontainer h2 {
+  margin-top: 50px;
+}
+
+form {
+  max-width:320px;
+  margin:50px auto;
+}
+
+.feedback-input {
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus {
+  border:2px solid #730220;
+}
+
+textarea {
+  height: 150px;
+}
+
+[type="submit"] {
+  width: 100%;
+  background:#594B02;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover {
+  background:#BFB493;
+}
+
+
+/* Tablets ----------- */
+@media (min-device-width : 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .interests {
+    margin: 0 6% 0 6%;
+  }
+  body {
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     margin:0;
+   }
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+  .interests .interestpics {
+    float: left;
+    margin-right: 30px;
+  }
+  .interests article {
+    /*margin-bottom: 100px;*/
+  }
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  form {
+    max-width: 530px;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  .interests {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+}
